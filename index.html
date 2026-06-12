@@ -529,6 +529,7 @@
 
 fetch(URL_SCRIPT, {
   method: 'POST',
+  mode: 'no-cors',
   body: JSON.stringify({ entrenador, fecha, jugadora, logros, desafios, comentario })
 });
     console.log('MIRADAS · Registro', { jugadora, entrenador, fecha, logros, desafios, comentario });
